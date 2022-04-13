@@ -1,0 +1,5 @@
+select id,name,firstname,concat(date_format(date_debut,'%d/%m/%Y %H:%i'),'',date_format(date_fin,'%d/%m/%Y %H:%i')),nbre_hour from users left join date_entry on users.id = date_entry.id_user 
+
+select id,name,firstname,date_debut,date_fin,nbre_hour from users left join date_entry on users.id = date_entry.id_user
+
+select id,name,firstname, date_format(date_debut,'%d/%m/%Y %H:%i'),date_format(date_fin,'%d/%m/%Y %H:%i'),nbre_hour from users left join date_entry on users.id = date_entry.id_user 

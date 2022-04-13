@@ -1,0 +1,15 @@
+###
+
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+    "name":"mr ferdi remplacant",
+    "firstname":"imonal",
+    "email":"test8@gmail.com",
+    "role":"user",
+    "password":"hello"
+}
+
+###
+DELETE http://localhost:8080/api/users/24
